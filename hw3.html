@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lesson "FORMS"</title>
+	</head>
+	<body leftmargin="100" rightmargin="100">
+		<header>
+			<h1>Урок "Формы": теги и их атрибуты</h1>
+			<h2>Расскажите немного о себе...</h2>
+			<span>Попытка создать форму по образцу</span>
+		</header>
+		<p>
+			<form action="" method="post">
+				<fieldset>
+					<legend><b>Коротко о себе</b></legend>
+					<ul type="none">
+						<li><label for="name">Имя:</label>
+						<input type="text" name="name" id="name"></li>
+						<p>
+						<li><label for="surname">Фамилия:</label>
+						<input type="text" name="surname" id="surname"></li>
+						</p>
+						<li><label for="gender">Пол:</label>
+						<input type="radio" name="gender" value="man"> Мужской
+						<input type="radio" name="gender" value="woman"> Женский</li>
+						<p>
+						<li><li><label for="age">Возраст:</label>
+						<input type="number" name="age" id="age"> лет</li>
+						</p>
+					</ul>
+				</fieldset>
+			</form>
+		</p>
+		<form action="" method="post">
+			<fieldset>
+				<legend><b>Подробнее о себе</b></legend>
+					<ul type="none">
+						<li><input type="radio" name="gender" value="male"> Молодой человек</li>
+						<li><input type="radio" name="gender" value="female"> Девушка</li>
+						<li><input type="date" name="date of birth" id="date of birth"> Дата рождения</li>
+						<li><input type="text" name="maritalstatus" id="maritalstatus"> Семейное положение</li>
+						<li><input type="text" name="socialstatus" id="socialstatus"> Социальный статус</li>
+						<li><input type="text" name="location" id="location"> Местожительство</li>
+					</ul>
+				<p><b>Что вы обычно делаете на выходных</b></p>
+					<ul type="none">
+						<li><input type="checkbox" name="a" value="sleep"> Сплю</li>
+						<li><input type="checkbox" name="a" value="walk with friends"> Гуляю с друзьями</li>
+						<li><input type="checkbox" name="a" value="go fishing"> Хожу на рыбалку</li>
+						<li><input type="checkbox" name="a" value="play games"> Играю в игры</li>
+					</ul>
+				<p><b>Рассказать о формах в книге, посвященной HTML:</b></p>
+					
+					<select>
+						<option selected value="Site frequency">Site frequency</option>
+						<option value="Книга 1">Книга 1</option>
+						<option value="Книга 2">Книга 2</option>
+					</select>
+				<p><b>Сколько книг вы прочитали за свою жизнь:</b></p>
+					<ul type="none">
+						<li><input type="radio" name="book" value="0-10"> 0-10</li>
+						<li><input type="radio" name="book" value="11-20"> 11-20</li>
+						<li><input type="radio" name="book" value="21-50"> 21-50</li>
+						<li><input type="radio" name="book" value="50+"> 50+</li>
+					</ul>
+				<b>Ваши комментарии:</b>
+					<p><textarea name="comment" cols="50" rows="12"></textarea></p>
+				<p><select size="3" multiple name="hero[]">
+					<option value="Первая позиция">Первая позиция</option>
+					<option value="Вторая позиция">Вторая позиция</option>
+					<option value="Третья позиция">Третья позиция</option>
+					<option value="Четвертая позиция">Четвертая позиция</option>
+				</select></p>	
+			</fieldset>
+		</form>
+		<p>
+			<form action="" method="post">
+				<fieldset>
+					<legend><b>И в заключении</b></legend>
+						<input type="text" placeholder="Это поле было введено до вас" id="hint" size="30">
+					<p><b>Email</b></p>
+						<input type="text" name="Email" id="Email" size="30">
+					<p><b>Хотите подписаться на самую модную рассылку спама?</b><br>
+					<i>Выберите категории</i></p>
+					<ul type="none">
+						<li><input type="checkbox" name="a" value="equipment"> Обрудование</li>
+						<li><input type="checkbox" name="a" value="cooking"> Как приготовить обеды</li>
+						<li><input type="checkbox" name="a" value="money"> Заработай миллион за два дня!</li>
+					</ul>
+					<p><b>На сколько сложная задача:</b></p>
+						<ul type="none">
+							<li><input type="radio" name="choice" value="Совсем нет"> Совсем нет</li>
+							<li><input type="radio" name="choice" value="Так себе"> Так себе</li>
+							<li><input type="radio" name="choice" value="Еле справились"> Еле справились</li>
+						</ul>
+				</fieldset>
+			</form>		
+		</p>		
+		<form action="" method="post">
+			<input type="submit" id="submit" value="Отправить">
+	</body>
+</html>
